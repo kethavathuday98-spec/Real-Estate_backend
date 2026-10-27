@@ -115,9 +115,10 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 CORS_ALLOW_ALL_ORIGINS = True
 CORS_ALLOW_CREDENTIALS = True
 
-# CSRF Trusted Origins for Render
+# CSRF Trusted Origins for Render and Vercel
 CSRF_TRUSTED_ORIGINS = [
     'https://*.onrender.com',
+    'https://*.vercel.app',
     'http://localhost:5173',
     'http://localhost:3000',
     'http://127.0.0.1:5173',
